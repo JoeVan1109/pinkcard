@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+.card{
+    display: flex;
+    background-image: url(images/bg-pattern-desktop.svg);
+    box-shadow: 10px 5px 5px #C3C3C4;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo{
+    padding-left: 93px;
+    padding-top: 80px;
+    width: 149px;
+    height: 35px;
+}
+
+.logotext{
+    display: flex;
+}
+
+.premiertitre{
+    font-weight: lighter;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 9px;
+    line-height: 0em;
+    margin-top: 100px;
+    padding-left: 93px;
+    font-size:20px;
+
+}
+
+.deuxiemetitre{
+    font-weight: 600;
+    letter-spacing: 9px;
+    padding-left: 93px;
+    font-size: 20px;
+    margin: 0%;
+    color: hsl(0, 6%, 24%);
+    color: 
+}
+
+.text{
+    font-family: 'Fuggles', cursive;
+    
+    padding-left: 93px;
+    color: hsl(0, 36%, 70%);
+    
+}
+
+.search{
+    border-radius: 50px;
+    border-color: hsl(0, 36%, 70%);
+    width: 367px;
+    height: 37px;
+    padding-left: 30px;
+    margin-left: 93px;
+    position: absolute;
+    z-index: 0;
+}
+
+.submit{
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 71px;
+    height: 43px;
+    position: relative;
+    z-index: 1;
+    margin-left: 425px;
+    color: white;
+}
+
+.image{
+    object-fit: contain;
+    max-width: 497px;
+    padding-left: 115px;
+
+}
+.imagemobile{
+    width: 0;
+}
+
+@media  screen and (max-width: 360px) {
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        background-image: none;
+    }
+    .logo{
+        position: absolute;
+        z-index: 0;
+        padding-top: 0%;
+        bottom: 684px;
+        padding-left: 27px;
+        width: 66px;
+        height: 21px;
+    }
+    .imagemobile{
+        position: absolute;
+        z-index: 1;
+        bottom: 90px;
+        object-fit: cover;
+        width: 360px;
+        height: 239px;
+        top: 90px;
+        left: 0;
+    }
+    .image{
+        width: 0;
+    }
+    .premiertitre{
+        font-size: 38px;
+        margin-left: -86px;
+        margin-top: 56px;
+    }
+    .deuxiemetitre{
+        font-size: 38px;
+        margin-left: -86px;
+    }
+    .blocgauche{
+        position: relative;
+        z-index: 2;
+        top: 343px;
+        text-align: center;
+    }
+    .text{
+        font-size: 12px;
+        margin-left: -55px;
+        padding-left: 70px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .search{
+        margin-left: -200px;
+        border-width: 1px;
+
+    }
+    .submit{
+        margin-left: -274px;
+        font-size: 28px;
+    }
+    .search{
+        width: 236px;
+        margin-left: 40px;
+        color: hsl(0, 36%, 70%);
+    }
+    .submit{
+        margin-left: 240px;
+    }
+}
